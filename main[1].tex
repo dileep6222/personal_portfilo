@@ -1,0 +1,138 @@
+\documentclass[10pt,a4paper]{article}
+
+% Tight printable margins
+\usepackage[a4paper,margin=1.4cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+
+% PDF meta
+\hypersetup{
+  colorlinks=true,
+  urlcolor=black,
+  pdftitle={Juluri Dileep Goud - ATS Resume},
+  pdfauthor={Juluri Dileep Goud}
+}
+
+\flushbottom
+\pagestyle{empty}
+
+% --- GLOBAL ALIGNMENT ---
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlength{\tabcolsep}{0pt}
+
+% safer column types: X for flexible width, P for fixed width (p-like)
+\newcolumntype{X}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+% --- SECTION STYLE ---
+\titleformat{\section}
+  [block]
+  {\bfseries\normalsize}
+  {}
+  {0pt}
+  {\MakeUppercase}
+  [\vspace{2pt}\titlerule]
+
+\titlespacing{\section}{0pt}{6pt}{4pt}
+
+% Compact item spacing (portable settings)
+\setlist[itemize]{leftmargin=*, itemsep=1.5pt, topsep=2pt, parsep=0pt, partopsep=0pt, labelsep=6pt}
+
+\newcommand{\lbl}[1]{\textbf{#1}\hspace{4pt}}
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+  {\Large\bfseries JULURI DILEEP GOUD}\\[2pt]
+  \normalsize Certificate in AI Data Analytics\\[4pt]
+  \small
+  \href{tel:+918179062225}{+91 81790 62225} \;|\;
+  \href{mailto:dileepgoud6222@gmail.com}{dileepgoud6222@gmail.com} \;|\;
+  \href{https://www.linkedin.com/in/dileep-goud/}{LinkedIn} \;|\;
+  \href{https://github.com/dileep6222}{GitHub}
+\end{center}
+
+% ===== CAREER OBJECTIVE =====
+\section{Career Objective}
+Aspiring \textbf{AI/ML Engineer} with strong foundations in Python, Machine Learning, Deep Learning, and Data Analytics. Skilled in building ML models and deploying AI applications using TensorFlow, Scikit-learn, FastAPI, and Streamlit. Seeking to apply analytical and problem-solving abilities to create scalable AI solutions.
+
+% ===== EDUCATION =====
+\section{Educational Qualifications}
+\begin{tabularx}{\textwidth}{@{} X P{3cm} @{}}
+\textbf{B.Tech — CSE (IoT)} & 2021--2025 \\
+Malla Reddy Engineering College, Hyderabad & \\
+\\[-2pt]
+\textbf{Intermediate — MPC} & 2019--2021 \\
+Telangana Residential Junior College, Suryapet & \\
+\\[-2pt]
+\textbf{SSC} & 2019 \\
+Naagarjuna Model School, Hyderabad & \\
+\end{tabularx}
+
+% ===== SKILLS =====
+\section{Technical Skills}
+\lbl{Programming:} Python, SQL, C (Basics) \\
+\lbl{ML \& AI:} Supervised \& Unsupervised ML, Deep Learning, NLP, LLMs, Generative AI \\
+\lbl{Libraries:} NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, TensorFlow \\
+\lbl{Frameworks/Tools:} FastAPI, Flask, Streamlit, LangChain, Rasa, Git, Power BI \\
+\lbl{Data Skills:} Data Cleaning, EDA, Feature Engineering, Visualization \\
+\lbl{Notebooks:} Jupyter Notebook, Google Colab
+
+% ===== PROJECTS =====
+\section{Projects}
+\textbf{Bone Tumor Identification Using X-Ray Images (Deep Learning)} \\
+\begin{itemize}
+  \item Developed a CNN model for X-ray tumor classification using TensorFlow/Keras.
+  \item Performed data augmentation, hyperparameter tuning, and model evaluation.
+  \item Deployed the model via a Streamlit interface for real-time predictions.
+\end{itemize}
+
+\textbf{Child Mortality Prediction Using Machine Learning} \\
+\begin{itemize}
+  \item Built ML models using Logistic Regression, Random Forest, and SVM.
+  \item Conducted preprocessing, visualization, feature selection, and evaluation.
+  \item Tools: Python, Pandas, NumPy, Scikit-learn, Matplotlib.
+\end{itemize}
+
+% ===== CERTIFICATIONS =====
+\section{Certifications}
+\begin{itemize}
+  \item AI Data Analytics — Tech Mahindra SMART Academy (Dec 2025)
+\end{itemize}
+
+% ===== STRENGTHS =====
+\section{Strengths}
+\begin{itemize}
+  \item Quick learner
+  \item Strong problem-solving skills
+  \item Time management
+  \item Self-motivated
+  \item Teamwork and collaboration
+  \item Leadership qualities
+\end{itemize}
+
+% ===== LANGUAGES =====
+\section{Languages} 
+\begin{itemize}
+  \item English
+  \item Telugu
+  \item Hindi
+\end{itemize}
+
+% ===== PORTFOLIO =====
+\section{Portfolio}
+\begin{itemize}
+  \item \href{https://dileep6222.github.io/dileep.github.io/}{Dileep portfolio}
+\end{itemize}
+
+\end{document}
